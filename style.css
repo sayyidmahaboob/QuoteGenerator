@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Teko:wght@300&family=Tiro+Devanagari+Hindi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background: tomato; */
+
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 183, 27);
+  background-image: linear-gradient(8deg, rgb(61, 255, 44) 50%, transparent 50%),
+    linear-gradient(-40deg, rgb(243, 243, 243) 30%, transparent 30%);
+}
+
+.container {
+  width: 700px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.container blockquote {
+  font-size: 1.625rem;
+  min-height: 120px;
+  font-family: "Tiro Devanagari Hindi", serif;
+}
+
+.container blockquote::before,
+.container blockquote::after {
+  content: ' " ';
+}
+
+.container span {
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+  font-size: 26px;
+}
+
+.container span::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.container div {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.container button {
+  background-color: rgb(23, 124, 229);
+  color: whitesmoke;
+  border: solid 1.2px rgb(23, 124, 229);
+  width: 145px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.container button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.container button:nth-child(2) {
+  background: transparent;
+  color: #333;
+}
